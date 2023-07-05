@@ -1,0 +1,87 @@
+.pre-plans {
+    background-image: url('./images/workout.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .pre-designed-plans {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 18px;
+    /* background-color: wheat; */
+  }
+  
+  .pre-designed-plans h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .pre-designed-plans img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .pre-designed-plans .workout-details {
+    margin-top: 20px;
+    background-color: wheat;
+
+  }
+  
+  .pre-designed-plans h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .pre-designed-plans p {
+    margin-bottom: 20px;
+  }
+  
+  .pre-designed-plans ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .pre-designed-plans li {
+    margin-bottom: 10px;
+  }
+  
+  .pre-designed-plans span {
+    font-weight: bold;
+  }
+  
+  .pre-designed-plans .workout-details::before,
+  .pre-designed-plans .workout-details::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .pre-designed-plans::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .pre-designed-plans {
+      padding: 10px;
+    }
+  
+    .pre-designed-plans h2 {
+      font-size: 20px;
+    }
+  
+    .pre-designed-plans h3 {
+      font-size: 16px;
+    }
+  
+    .pre-designed-plans img {
+      border-radius: 4px;
+    }
+  }
+  

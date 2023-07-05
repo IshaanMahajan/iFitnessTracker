@@ -1,0 +1,74 @@
+.dashboardContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #ff7f00, #ff00ff, #00ff00);
+  background-size: 200% 200%;
+  animation: gradientMovement 10s infinite linear;
+}
+
+@keyframes gradientMovement {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dashboardTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.dashboardSection {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-image: linear-gradient(45deg, #ff00ff, #00ff00, #ff7f00);
+  background-size: 200% 200%;
+  animation: gradientMovement 10s infinite linear;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.dashboardSection:hover {
+  background-image: linear-gradient(45deg, #00ff00, #ff7f00, #ff00ff);
+  transform: rotateX(10deg) rotateY(10deg) scale(1.05);
+}
+
+.dashboardSectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.dashboardSectionDescription {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.dashboardSectionSubtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.dashboardSectionData {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
